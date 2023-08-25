@@ -1,0 +1,94 @@
+img {
+    border-radius: 50%;
+    display: block;
+    max-width: 25%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fade-in-image{
+    animation: fadeIn 5s;
+  }
+  .waviy {
+    position: relative;
+  }
+  .waviy span {
+    font-family: 'Roboto';
+    position: relative;
+    display: inline-block;  
+    animation: waviy 3s infinite;
+    animation-delay: calc(.1s * var(--i)); 
+  }
+  .container{
+    text-align: center;
+  }
+
+  body{
+    background-image: url(polly-background-1631651.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Roboto';
+  }
+  header{ 
+    text-align: center;
+  }
+  
+  footer{
+    color: white;
+  }
+  
+  
+  h2{
+    color: white;
+    text-align: center;
+  }
+  .p1{
+    color:black;
+    text-indent: 50px;
+    font-size:large;
+    width: 75%;
+    padding: auto;
+    margin: auto;
+  }
+  .experience{
+    text-decoration: underline;
+  }
+  .p2{
+    color:black;
+    font-size:large;
+    width: 75%;
+    padding: auto;
+    margin: auto;
+  }
+  .grid-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color:skyblue;
+    padding: 10px;
+    color: black;
+  }
+  .grid-item{
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @keyframes waviy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+  }
+  @media screen and (max-width: 480px) {
+    body {
+      background-color: skyblue;
+    }
+  }
